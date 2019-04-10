@@ -4,8 +4,7 @@
     margin: 1rem;
     background-color: white;
     font-family: sans-serif;
-    max-width: 30%;
-    font-size: 2em;
+    width: 250px;
 }
 
 img {
@@ -17,5 +16,5 @@ img {
 }
 
 p {
-    margin: 1rem;
+    margin: 0.5rem 1rem 0.5rem 1rem;
 }

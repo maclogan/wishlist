@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Sidebar from './components/Sidebar/Sidebar';
 import List from './components/List/List';
 
 class App extends Component {
@@ -13,7 +14,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <List image="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" name="Mac" price="$4.00" />
+        <Sidebar />
+        <List image="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" name="Mac" price="$4.00" />
       </div>
     );
   }
