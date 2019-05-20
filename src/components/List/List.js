@@ -6,11 +6,15 @@ import ListItem from '../ListItem/ListItem';
 class List extends React.Component {
     render() {
         return (
-            <div class="list">
+            <div className="list">
+                <h5>{this.props.listName} ></h5>
                 <div class="listItems">
-                    <ListItem image={this.props.image} 
-                    name={this.props.name}
-                    price={this.props.price} />
+                    <ListItem image={this.props.items.image} 
+                    name={this.props.items.name}
+                    price={this.props.items.price} />
+                    <ListItem image={this.props.items.image} 
+                    name={this.props.items.name}
+                    price={this.props.items.price} />
                 </div>
             </div>
         )

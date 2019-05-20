@@ -1,4 +1,7 @@
+.list {
+    padding-bottom: 2rem;
+}
+
 .listItems {
     display: flex;
-    align-items: center;
 }
