@@ -3,23 +3,20 @@ import React from 'react';
 import './List.css'
 import ListItem from '../ListItem/ListItem';
 
-class List extends React.Component {
-    render() {
-        return (
-            <div className="list">
-                <h5>{this.props.listName} ></h5>
-                <div class="listItems">
-                    <ListItem image={this.props.items.image} 
-                    name={this.props.items.name}
-                    price={this.props.items.price} />
-                    <ListItem image={this.props.items.image} 
-                    name={this.props.items.name}
-                    price={this.props.items.price} />
-                </div>
+const List = ({items}) => {
+    console.log(typeof(items))
+    return (
+        <div className="list">
+            <h5>Fix list names</h5>
+            <div className="listItems">
+                { items && items.map(item => {
+                    return(
+                        <ListItem item={item} key={item.id}/>
+                    )
+                })}
             </div>
-        )
-    }
-
-};
+        </div>
+    )
+}
 
 export default List;
